@@ -7,8 +7,8 @@
 
     <Grid RowDefinitions="*,Auto">
     
-        <toolkit:MediaElement x:Name="video" HeightRequest="300" Source="Something"/>
-    
-        <Button Grid.Row="1" Clicked="Button_Clicked"/>
+        <toolkit:MediaElement  x:Name="video" HeightRequest="300" Source="Something"/>
+
+        <Button Text="Set new Mainpage" Grid.Row="1" Clicked="Button_Clicked"/>
     </Grid>
 </ContentPage>
