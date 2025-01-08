@@ -6,10 +6,36 @@
     xmlns:local="clr-namespace:MauiTestProject"
     Shell.FlyoutBehavior="Flyout"
     Title="MauiTestProject">
+    <Shell.Resources>
+        <Style x:Key="BaseStyle" TargetType="Element">
+            <Setter Property="Shell.BackgroundColor" Value="Black" />
+            <Setter Property="Shell.ForegroundColor" Value="Green" />
+            <Setter Property="Shell.TitleColor" Value="Green" />
+            <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+            <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
 
+        </Style>
+        <Style BasedOn="{StaticResource BaseStyle}" TargetType="ShellItem" />
+    </Shell.Resources>
+    <FlyoutItem Title="HOME" FlyoutDisplayOptions="AsSingleItem"
+  Route="home">
+        <Tab Title="Homepage" Route="homepage">
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-
+        </Tab>
+        <!--<Tab Title="Page2" Route="page2">
+            <ShellContent
+       Title="Page2"
+       ContentTemplate="{DataTemplate local:MainPage}"
+       Route="Test" />
+        </Tab>
+        <Tab Title="Page3" Route="page3">
+        <ShellContent
+       Title="Page3"
+       ContentTemplate="{DataTemplate local:MainPage}"
+       Route="Test3" />
+        </Tab>-->
+    </FlyoutItem>
 </Shell>

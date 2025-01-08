@@ -4,7 +4,7 @@
              x:Class="MauiTestProject.NewPage1"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Title="NewPage1">
-    <!--<Grid RowDefinitions="*,Auto"  toolkit:StateContainer.CurrentState="{Binding CurrentState}">
+    <Grid RowDefinitions="*,Auto" >
         <VerticalStackLayout toolkit:StateView.StateKey="Start">
         <toolkit:MediaElement
             x:Name="video"
@@ -12,10 +12,10 @@
             HeightRequest="300"
             WidthRequest="300"
             ShouldAutoPlay="True"
-            Source="embed://ElbowExercise.mp4"
+            ShouldLoopPlayback="True"
+            Source="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
             />
-        <Button Grid.Row="1" Text="New Main page" Clicked="Button_Clicked">
-        </Button>
+       
         </VerticalStackLayout>
-    </Grid>-->
+    </Grid>
 </ContentPage>
